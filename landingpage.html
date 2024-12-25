@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #d8e4e9;
+      }
+      .section1 {
+        background-image: url(./HeroImage.png);
+        width: 1440px;
+        height: 773px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .section1 > nav {
+        width: 1204px;
+        height: 43.5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .section1 .actioncontainer {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+      }
+      .section1 a {
+        text-decoration: none;
+        font-family: GIP;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+        color: #fff;
+        width: 100px;
+        height: 21px;
+      }
+      .section1 button {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: #fff;
+        border-radius: 50px;
+        border: none;
+        padding: 13px;
+        font-family: GIP;
+        color: #000;
+      }
+      .section1 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 618px;
+        height: 394px;
+        margin-bottom: 210px;
+      }
+      .section1 .t1 {
+        font-size: 80px;
+        font-family: bebas neue;
+        font-weight: 400;
+        text-transform: uppercase;
+        width: 618px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e8edf2;
+      }
+      .section1 .t2 {
+        color: #fdfdfe;
+        font-size: 250px;
+        font-family: bebas neue;
+        font-weight: 400;
+        width: 618px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section1 .t3 {
+        color: #fff;
+        font-size: 64px;
+        font-family: hanuman;
+        font-weight: 900;
+        width: 144px;
+        height: 64px;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+      }
+      .section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 65px 119px;
+      }
+      .section2 > div {
+        display: flex;
+        width: 1202px;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .section2 section {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 275.5px;
+        height: 370px;
+        border-radius: 40px;
+        box-shadow: -8px -8px 0px 0px rgba(31, 114, 170, 0.46),
+                          8px 8px 0px 0px rgba(41, 114, 139, 0.25);
+      }
+      .section2 img {
+        width: 275.5px;
+        height: 370px;
+        border-radius: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .section2 section:hover {
+        filter: brightness(70%);
+      }
+      .section2 p {
+        color: #fdfdfe;
+        width: 232px;
+        text-align: center;
+        font-family: Bebas Neue;
+        font-size: 37px;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        line-height: normal;
+        text-shadow: 0px 4px 4.9px rgba(0, 0, 0, 0.65);
+      }
+      .section3 {
+        display: flex;
+        width: 1440px;
+        height: 1022px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .section3 > div {
+        background-image: url(./Map\ Image.png);
+        width: 1440px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+        justify-content: space-between;
+      }
+      .section3 header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 120px;
+        width: 1440px;
+        height: 84px;
+      }
+      .section3 h2 {
+        color: #000;
+        text-align: center;
+        font-family: GIP;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .section3 h4 {
+        color: #18181bb2;
+        text-align: center;
+        font-family: GIP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .section3 section {
+        display: flex;
+        width: 1200px;
+        height: 640px;
+        justify-content: space-between;
+        padding: 58px 120px 0px 120px;
+      }
+      .section3 .leftcontainer {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .section3 .rightcontainer {
+        display: flex;
+        width: 647px;
+        height: 640px;
+        align-self: stretch;
+      }
+      .section3 .destination {
+        display: flex;
+        width: 453px;
+        height: 52px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 120px;
+        padding: 30px;
+      }
+      .section3 .color1 {
+        background-color: #eee9d9;
+      }
+      .section3 .color2 {
+        background-color: #8bb8c1cc;
+      }
+      .section3 .color3 {
+        background-color: #aad8d7cc;
+      }
+      .section3 .color4 {
+        background-color: #8bc0bdcc;
+      }
+      .section3 .color5 {
+        background-color: #97cce0cc;
+      }
+      .section3 .locationname {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+      .section3 .locationname span {
+        color: #09090b;
+        font-family: GIP;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .section3 .regioncontainer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .section3 .regioncontainer p {
+        color: #18181b;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .section3 .day {
+        color: #000;
+        font-family: GIP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background-color: white;
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .mappin {
+        width: 34px;
+        height: 34px;
+      }
+      .section3 .destination:hover {
+        border: white 3px solid;
+      }
+      .section3 .color1:hover ~ .image1 {
+        display: block;
+      }
+      .section3 .image1 {
+        display: none;
+        position: absolute;
+        left: 1155px;
+        top: 1650px;
+        width: 200px;
+        height: 200px;
+      }
+      .section3 .color2:hover ~ .image2 {
+        display: block;
+      }
+      .section3 .image2 {
+        display: none;
+        position: absolute;
+        left: 950px;
+        top: 1500px;
+        width: 200px;
+        height: 200px;
+      }
+      .section3 .color3:hover ~ .image3 {
+        display: block;
+      }
+      .section3 .image3 {
+        display: none;
+        position: absolute;
+        left: 850px;
+        top: 1650px;
+        width: 200px;
+        height: 200px;
+      }
+      .section3 .color4:hover ~ .image4 {
+        display: block;
+      }
+      .section3 .image4 {
+        display: none;
+        position: absolute;
+        left: 750px;
+        top: 1700px;
+        width: 200px;
+        height: 200px;
+      }
+      .section3 .color5:hover ~ .image5 {
+        display: block;
+      }
+      .section3 .image5 {
+        display: none;
+        position: absolute;
+        left: 700px;
+        top: 1500px;
+        width: 200px;
+        height: 200px;
+      }
+      .section4 {
+        background-image: url(./Price&Footer\ Section.png);
+        width: 1440px;
+        height: 1120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .section4 > header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 40px;
+      }
+      .section4 > header h2 {
+        text-align: center;
+        font-family: GIP;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #000;
+        height: 50px;
+      }
+      .section4 > header h4 {
+        text-align: center;
+        font-family: GIP;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        color: rgba(24, 24, 27, 0.7);
+        height: 24px;
+      }
+      .section4 > section {
+        display: inline-flex;
+        align-items: center;
+        gap: 24px;
+        margin-top: 104px;
+      }
+      .section4 .pricecontainer {
+        display: flex;
+        width: 384px;
+        height: 527px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 40px;
+        background-color: #fafbfc;
+      }
+      .section4 .pricecontainer > header {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        padding: 32px 24px 24px 24px;
+        gap: 16px;
+      }
+      .section4 .pricecontainer .headericon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        border-radius: 999px;
+        border: 1px solid #d6d8db;
+        background-color: #fff;
+      }
+      .section4 .pricecontainer > header span {
+        color: #121316;
+        font-family: GIP;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .section4 .pricecontainer > section {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        padding: 12px 24px 48px 24px;
+      }
+      .section4 .pricecontainer .pricecheck {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        gap: 32px;
+      }
+      .section4 .pricecontainer .pricecheck > header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+      }
+      .section4 .price {
+        color: #303030;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .section4 .pricecomment {
+        color: #919191;
+        font-family: SF pro display;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        width: 100%;
+        height: 19px;
+      }
+      .section4 .pricecontainer .pricecheck .tocheck {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        gap: 16px;
+        width: 336px;
+        height: 177px;
+      }
+      .section4 .tocheck > p {
+        color: #121316;
+        font-family: GIP;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        width: 256px;
+        height: 21px;
+        padding: 0px 40px;
+      }
+      .section4 .tocheck > div {
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        gap: 20px;
+      }
+      .section4 .tocheck > div > span {
+        color: #3f4145;
+        font-family: GIP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .section4 button {
+        border: none;
+        padding: 12px 16px;
+        background-color: #a4d1e2;
+        border-radius: 999px;
+        color: #000;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: -0.16px;
+        line-height: 20px;
+        width: 100%;
+      }
+      .section4 footer {
+        display: flex;
+        justify-content: center;
+        width: 1440px;
+        height: 204px;
+        align-items: center;
+        padding: 80px 120px;
+        margin-bottom: 19px;
+      }
+      .section4 footer header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+      }
+      .section4 footer nav {
+        display: flex;
+        gap: 20px;
+      }
+      .section4 footer .ikon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        justify-content: center;
+        border-radius: 999px;
+        background-color: #fafbfc;
+      }
+      .section4 footer span {
+        color: #6972b5;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    </style>
+    <title>DAY2</title>
+  </head>
+
+  <body>
+    <section class="section1">
+      <nav>
+        <img src="./logo.png" style="width: 101px; height: 35px" />
+        <div class="actioncontainer">
+          <a href target="_blank">Home</a>
+          <a href target="_blank">About</a>
+          <a href target="_blank">Contact</a>
+          <img src="./user.png" style="width: 20px; height: 20px" />
+        </div>
+        <button>EN</button>
+      </nav>
+      <div>
+        <p class="t1">PURE MAGIC</p>
+        <p class="t2">AWAITS!</p>
+        <p class="t3">2024</p>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div>
+        <section>
+          <img src="./terkhiin tsagaan nuur.png" />
+          <p>terkhiin tsagaan lake</p>
+        </section>
+        <section>
+          <img src="./amarbayasgalant.png" />
+          <p>amarbayasgalant monastery</p>
+        </section>
+        <section>
+          <img src="./khuvsgul.png" />
+          <p>khuvgul lake</p>
+        </section>
+        <section>
+          <img src="./khorgiin togoo.png" />
+          <p>khorgiin togoo</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div>
+        <header>
+          <h2>Destination of Our Agency</h2>
+          <h4>pack your bags and get ready</h4>
+        </header>
+        <section>
+          <div class="leftcontainer">
+            <div class="destination color1">
+              <div class="locationname">
+                <span>Sukhbaatar square</span>
+                <div class="regioncontainer">
+                  <img
+                    src="./Icon Container 2.png"
+                    width="14px"
+                    height="14px"
+                  />
+                  <p>Ulaanbaatar</p>
+                </div>
+              </div>
+              <div class="day">DAY 1</div>
+            </div>
+            <div class="destination color2">
+              <div class="locationname">
+                <span>Sukhbaatar square</span>
+                <div class="regioncontainer">
+                  <img
+                    src="./Icon Container 2.png"
+                    width="14px"
+                    height="14px"
+                  />
+                  <p>Ulaanbaatar</p>
+                </div>
+              </div>
+              <div class="day">DAY 1</div>
+            </div>
+            <div class="destination color3">
+              <div class="locationname">
+                <span>Sukhbaatar square</span>
+                <div class="regioncontainer">
+                  <img
+                    src="./Icon Container 2.png"
+                    width="14px"
+                    height="14px"
+                  />
+                  <p>Ulaanbaatar</p>
+                </div>
+              </div>
+              <div class="day">DAY 1</div>
+            </div>
+            <div class="destination color4">
+              <div class="locationname">
+                <span>Sukhbaatar square</span>
+                <div class="regioncontainer">
+                  <img
+                    src="./Icon Container 2.png"
+                    width="14px"
+                    height="14px"
+                  />
+                  <p>Ulaanbaatar</p>
+                </div>
+              </div>
+              <div class="day">DAY 1</div>
+            </div>
+            <div class="destination color5">
+              <div class="locationname">
+                <span>Sukhbaatar square</span>
+                <div class="regioncontainer">
+                  <img
+                    src="./Icon Container 2.png"
+                    width="14px"
+                    height="14px"
+                  />
+                  <p>Ulaanbaatar</p>
+                </div>
+              </div>
+              <div class="day">DAY 1</div>
+            </div>
+            <img class="image1" src="./2.sukhbaatar.png" alt="" />
+            <img class="image2" src="./2.amarbayasgalant.png" alt="" />
+            <img class="image3" src="./2.khorgiin togoo.png" alt="" />
+            <img class="image4" src="./2.terkhiin tsagaan nuur.png" alt="" />
+            <img class="image5" src="./2.khuvsgul.png" alt="" />
+          </div>
+          <div class="rightcontainer"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section4">
+      <header>
+        <h2>Pricing of Our Agency</h2>
+        <h4>Choose a package that's right for you</h4>
+      </header>
+      <section>
+        <div class="pricecontainer">
+          <header>
+            <div class="headericon">
+              <img src="./Icon.png" alt="heart" />
+            </div>
+            <span> Budget Package </span>
+          </header>
+          <section>
+            <div class="pricecheck">
+              <header>
+                <span class="price">500$</span>
+                <span class="pricecomment">Essentials Covered</span>
+              </header>
+              <div class="tocheck">
+                <p>Includes</p>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Group transportation (shared van/bus) </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Standard accommodation (yurt or guesthouse) </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Guided lake tour </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> 1 meal per day (breakfast) </span>
+                </div>
+              </div>
+            </div>
+            <button>Select Package</button>
+          </section>
+        </div>
+        <div class="pricecontainer">
+          <header>
+            <div class="headericon">
+              <img src="./Icon.png" alt="heart" />
+            </div>
+            <span> Budget Package </span>
+          </header>
+          <section>
+            <div class="pricecheck">
+              <header>
+                <span class="price">500$</span>
+                <span class="pricecomment">Essentials Covered</span>
+              </header>
+              <div class="tocheck">
+                <p>Includes</p>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Group transportation (shared van/bus) </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Standard accommodation (yurt or guesthouse) </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Guided lake tour </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> 1 meal per day (breakfast) </span>
+                </div>
+              </div>
+            </div>
+            <button>Select Package</button>
+          </section>
+        </div>
+        <div class="pricecontainer">
+          <header>
+            <div class="headericon">
+              <img src="./Icon.png" alt="heart" />
+            </div>
+            <span> Budget Package </span>
+          </header>
+          <section>
+            <div class="pricecheck">
+              <header>
+                <span class="price">500$</span>
+                <span class="pricecomment">Essentials Covered</span>
+              </header>
+              <div class="tocheck">
+                <p>Includes</p>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Group transportation (shared van/bus) </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Standard accommodation (yurt or guesthouse) </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> Guided lake tour </span>
+                </div>
+                <div>
+                  <img
+                    src="./check.png"
+                    alt="check"
+                    width="20px"
+                    height="20px"
+                  />
+                  <span> 1 meal per day (breakfast) </span>
+                </div>
+              </div>
+            </div>
+            <button>Select Package</button>
+          </section>
+        </div>
+      </section>
+      <footer>
+        <header>
+          <nav>
+            <div class="ikon">
+              <img
+                src="./Facebook Icon.png"
+                alt="Facebook"
+                width="24px"
+                height="24px"
+              />
+              <span>Facebook</span>
+            </div>
+            <div class="ikon">
+              <img
+                src="./Instagram Icon.png"
+                alt="Instagram"
+                width="24px"
+                height="24px"
+              />
+              <span class="address"> Instagram </span>
+            </div>
+          </nav>
+          <div>
+            <img src="./logo.png" alt="logo" width="101px" height="35px" />
+          </div>
+        </header>
+      </footer>
+    </section>
+  </body>
+</html>
